@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .navbar {
+      background-color: #0d6efd;
+    }
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/1600x900/?nature,water') no-repeat center center/cover;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+    .section-title {
+      margin-top: 60px;
+      margin-bottom: 30px;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      transition: 0.3s;
+    }
+    footer {
+      background-color: #0d6efd;
+      color: white;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Aswin R</a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#martialarts">Hobbie</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Hero Section with Small Round Profile Picture -->
+<section class="hero d-flex justify-content-center text-center">
+  <div class="container">
+    <img src="./images/my photo.jpg" alt="Your Photo" class="profile-pic-small mb-3" />
+    <h1 class="display-4">Hi, I'm Aswin R</h1>
+    <p class="lead">Web Developer | Kickboxer | Tech Enthusiast</p>
+    <a href="#about" class="btn btn-outline-light mt-3">More about me</a>
+  </div>
+</section>
+
+
+
+  <!-- About -->
+  <section id="about" class="container py-5">
+    <h2 class="section-title text-center">About Me</h2>
+    <p class="text-center">I'm a passionate web developer with experience in building responsive and dynamic websites using modern technologies. I enjoy solving problems and creating beautiful user experiences.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-light py-5">
+    <div class="container">
+      <h2 class="section-title text-center">Skills</h2>
+      <div class="row text-center">
+        <div class="col-md-3 mb-3"><span class="badge bg-primary p-3">HTML</span></div>
+        <div class="col-md-3 mb-3"><span class="badge bg-secondary p-3">CSS</span></div>
+        <div class="col-md-3 mb-3"><span class="badge bg-success p-3">JavaScript</span></div>
+        <div class="col-md-3 mb-3"><span class="badge bg-danger p-3">Bootstrap</span></div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+ <!-- Martial Arts Section -->
+<section id="martialarts" class="py-5 text-center bg-dark text-white">
+  <div class="container">
+    <h2 class="section-title">Martial Artist | Kickboxer</h2>
+    <p class="lead">Discipline. Strength. Focus.</p>
+    <p>
+      I'm a passionate <strong>kickboxer</strong> and martial artist, currently training at
+      <strong>Combat Fight Club, Kollam</strong>. Kickboxing has helped me develop mental resilience,
+      physical strength, and unwavering discipline — all of which fuel my work ethic in and out of the ring.Below are the details of the club i train at. If you are interested,please check it out.
+    </p>
+
+    <div class="mt-4">
+      <a href="https://instagram.com/combatfightclub_" target="_blank" class="btn btn-outline-light me-2">
+        <i class="bi bi-instagram"></i> Combat Fight Club on Instagram
+      </a>
+      <a href="https://maps.app.goo.gl/SPNyFLDXq6p4b6Tt5?g_st=com.google.maps.preview.copy" target="_blank" class="btn btn-outline-success">
+        <i class="bi bi-geo-alt-fill"></i> View Club Location
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Resume Download Section -->
+<section id="resume" class="py-5 text-center">
+  <div class="container">
+    <h2 class="section-title">Download My Resume</h2>
+    <p>You can download my updated resume in PDF format.</p>
+    <a href="./files/AswinCvpdf.pdf" class="btn btn-outline-primary btn-lg" download>
+      <i class="bi bi-download"></i> Download Resume
+    </a>
+  </div>
+</section>
+
+<!-- Contact Section: WhatsApp + Instagram -->
+<section id="contact" class="py-5 text-center bg-light">
+  <div class="container">
+    <h2 class="section-title">Let’s Connect</h2>
+    <p>If you have any questions, projects, or want to collaborate — feel free to reach out on WhatsApp or Instagram.</p>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/917592857182" target="_blank" class="btn btn-success btn-lg me-2 mb-2">
+      <i class="bi bi-whatsapp"></i> Message Me on WhatsApp
+    </a>
+
+    <!-- Instagram Button -->
+    <a href="https://www.instagram.com/aswin10___?igsh=MXRkaGR6eDdoamhrbA%3D%3D&utm_source=qr" target="_blank" class="btn btn-outline-primary btn-lg mb-2">
+      <i class="bi bi-instagram"></i> Follow Me on Instagram
+    </a>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2025 Aswin R. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

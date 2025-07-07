@@ -1,0 +1,17 @@
+#martialarts {
+  background-color: #111;
+  color: #fff;
+}
+#martialarts img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.profile-pic-small {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
