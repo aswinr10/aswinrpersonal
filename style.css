@@ -1,9 +1,19 @@
-.hero-section {
-  height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-              url('https://source.unsplash.com/1600x900/?creative,workspace') no-repeat center center/cover;
-  padding-top: 80px;
+.hero-btn {
+  background-color: #ffdd57;
+  color: #1e3c72;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
 }
+
+.hero-btn:hover {
+  background-color: #ffc107;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(255, 221, 87, 0.6);
+}
+
 
 .typing-text {
   font-size: 1.5rem;
@@ -56,4 +66,3 @@
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
-
