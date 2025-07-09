@@ -1,17 +1,59 @@
-#martialarts {
-  background-color: #111;
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url('https://source.unsplash.com/1600x900/?creative,workspace') no-repeat center center/cover;
+  padding-top: 80px;
+}
+
+.typing-text {
+  font-size: 1.5rem;
   color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #fff;
+  width: 0;
+  animation: typing 4s steps(30, end) forwards, blink 0.75s step-end infinite;
 }
-#martialarts img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
-.profile-pic-small {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+@keyframes blink {
+  50% { border-color: transparent }
 }
+
+/* Glowing Button */
+.glow-button {
+  border: 2px solid #0d6efd;
+  color: white;
+  padding: 12px 25px;
+  background-color: transparent;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.6);
+}
+
+.glow-button:hover {
+  background-color: #0d6efd;
+  box-shadow: 0 0 20px rgba(13, 110, 253, 0.9);
+  transform: translateY(-2px);
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
