@@ -1,217 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name | Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome Section</title>
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <style>
     body {
-      scroll-behavior: smooth;
-    }
-    .navbar {
-      background-color: #0d6efd;
-    }
-    .navbar-brand, .nav-link {
-      color: white !important;
-    }
-    .hero {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/1600x900/?nature,water') no-repeat center center/cover;
+      background-color: #1e1e1e;
       color: white;
-      height: 100vh;
-      display: flex;
-      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
     }
-    .section-title {
-      margin-top: 60px;
-      margin-bottom: 30px;
+    .badge-custom {
+      background-color: #333;
+      color: #ffc107;
+      font-size: 0.75rem;
+      padding: 0.4rem 0.6rem;
+      border-radius: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
     }
-    .card:hover {
-      transform: scale(1.03);
+    .btn-yellow {
+      background-color: #ffc107;
+      border: none;
+      color: black;
+    }
+    .btn-yellow:hover {
+      background-color: #e0a800;
+      color: #fff;
+    }
+    .btn-outline-light:hover {
+      background-color: white;
+      color: black;
+    }
+    .hero-img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 10px solid #ffb700;
+      background-color: #ffb700;
+    }
+    .social-icons a {
+      color: white;
+      margin: 0 0.5rem;
+      font-size: 1.3rem;
       transition: 0.3s;
     }
-    footer {
-      background-color: #0d6efd;
-      color: white;
-      padding: 20px 0;
+    .social-icons a:hover {
+      color: #ffc107;
+    }
+    @media (max-width: 576px) {
+      .hero-img {
+        width: 200px;
+        height: 200px;
+        border-width: 6px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Aswin R</a>
-      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#martialarts">Hobbie</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-warning" href="#">Aswin</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#why-hire">Why Hire Me?</a></li>
+        <li class="nav-item"><a class="nav-link" href="#more">More</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-        </ul>
+<!-- Hero Section -->
+<div class="container py-5">
+  <div class="row align-items-center">
+    <!-- Text -->
+    <div class="col-lg-6 text-center text-lg-start mb-5 mb-lg-0" data-aos="fade-up" data-aos-duration="1000">
+      <span class="badge-custom">WEB DEVELOPER</span>
+      <h1 class="display-4 fw-bold mt-3">ASWIN R</h1>
+      <p class="lead mt-3">
+        I'm a Web designer , Diploma holder in Electrical & Electronics Engineering and a Kickboxer too.
+      </p>
+      <div class="mt-4">
+        <a href="./files/AswinCvpdf.pdf" class="btn btn-yellow me-3 px-4">Download CV</a>
+      </div>
+      <div class="social-icons mt-4">
+        <a href="https://wa.me/917592857182" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.instagram.com/aswin10___?igsh=MXRkaGR6eDdoamhrbA%3D%3D&utm_source=qr" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="bi bi-linkedin"></i></a>
       </div>
     </div>
-  </nav>
-<!-- Modern Hero Section -->
-<section class="hero-section d-flex align-items-center text-white" style="height: 100vh; background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);">
-  <div class="container text-center">
-    <div class="mb-4">
-      <h1 class="display-3 fw-bold" style="text-shadow: 2px 2px 5px rgba(0,0,0,0.4);">Hello, I'm <span style="color: #ffdd57;">Aswin R</span></h1>
-      <p class="lead fs-4 mt-3">Web Developer • Kickboxer • Tech Explorer</p>
+    <!-- Image -->
+    <div class="col-lg-6 text-center" data-aos="zoom-in" data-aos-duration="1000">
+      <img src="./images/my photo.jpg" alt="Profile" class="hero-img img-fluid" loading="lazy">
     </div>
-    <div>
-      <a href="#about" class="btn hero-btn btn-lg me-3">Explore More</a>
-      <a href="#contact" class="btn btn-outline-light btn-lg">Contact Me</a>
+  </div>
+</div>
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-dark text-white">
+  <div class="container" data-aos="fade-up" data-aos-duration="1000">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h2 class="fw-bold mb-3">About Me</h2>
+        <p class="lead">Hi, I'm <strong>Aswin</strong>, a passionate Web developer with a background in UI/UX design, illustration, and front-end development.</p>
+        <p>I hold a <strong>Diploma in Electrical & Electronics Engineering</strong>, which has given me a strong technical foundation and problem-solving mindset.</p>
+        <p>I enjoy turning ideas into reality using modern web technologies and love creating educational resources.</p>
+        <a href="#skills" class="btn btn-yellow mt-3 px-4">View Skills</a>
+      </div>
     </div>
   </div>
 </section>
 
-
-
-
-  <!-- About -->
-  <section id="about" class="container py-5">
-    <h2 class="section-title text-center">About Me</h2>
-    <p class="text-center">I'm a passionate web developer with experience in building responsive and dynamic websites using modern technologies. I enjoy solving problems and creating beautiful user experiences.</p>
-  </section>
-
-<!-- Updated Skills Section with Cards -->
-<section id="skills" class="py-5 bg-light">
+<!-- Skills Section -->
+<section id="skills" class="py-5 bg-black text-white">
   <div class="container">
-    <h2 class="section-title text-center mb-5">My Skillset</h2>
-    <div class="row g-4">
-      
-      <!-- HTML -->
-      <div class="col-md-4">
-        <div class="card shadow text-center">
-          <div class="card-body">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" width="60">
-            <h5 class="mt-3">HTML</h5>
-            <p class="text-muted">Markup language for building website structure.</p>
-          </div>
-        </div>
+    <h2 class="fw-bold text-center mb-5" data-aos="fade-down">My Skills</h2>
+    <div class="row text-center g-4">
+      <!-- Each Skill Icon -->
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="60" />
+        <h6 class="mt-2">JavaScript</h6>
       </div>
-
-      <!-- CSS -->
-      <div class="col-md-4">
-        <div class="card shadow text-center">
-          <div class="card-body">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" width="60">
-            <h5 class="mt-3">CSS</h5>
-            <p class="text-muted">Stylesheet language used to make websites visually appealing.</p>
-          </div>
-        </div>
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="60" />
+        <h6 class="mt-2">Python</h6>
       </div>
-
-      <!-- JavaScript -->
-      <div class="col-md-4">
-        <div class="card shadow text-center">
-          <div class="card-body">
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" width="60">
-            <h5 class="mt-3">JavaScript</h5>
-            <p class="text-muted">Scripting language for dynamic and interactive web content.</p>
-          </div>
-        </div>
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="60" />
+        <h6 class="mt-2">HTML</h6>
       </div>
-
-      <!-- Bootstrap -->
-      <div class="col-md-4">
-        <div class="card shadow text-center">
-          <div class="card-body">
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Bootstrap" width="60">
-            <h5 class="mt-3">Bootstrap</h5>
-            <p class="text-muted">Front-end framework for responsive and mobile-first websites.</p>
-          </div>
-        </div>
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="60" />
+        <h6 class="mt-2">CSS</h6>
       </div>
-
-      <!-- Python -->
-      <div class="col-md-4">
-        <div class="card shadow text-center">
-          <div class="card-body">
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" width="60">
-            <h5 class="mt-3">Python</h5>
-            <p class="text-muted">Powerful programming language for automation, data, and web backends.</p>
-          </div>
-        </div>
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="500">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" width="60" />
+        <h6 class="mt-2">SQL</h6>
       </div>
-
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="600">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" width="60" />
+        <h6 class="mt-2">Bootstrap</h6>
+      </div>
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="700">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" width="60" />
+        <h6 class="mt-2">C++</h6>
+      </div>
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="800">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" width="60" />
+        <h6 class="mt-2">PHP</h6>
+      </div>
     </div>
   </div>
 </section>
 
-
-
-
-
- <!-- Martial Arts Section -->
-<section id="martialarts" class="py-5 text-center bg-dark text-white">
-  <div class="container">
-    <h2 class="section-title">Martial Artist | Kickboxer</h2>
-    <p class="lead">Discipline. Strength. Focus.</p>
-    <p>
-      I'm a passionate <strong>kickboxer</strong> and martial artist, currently training at
-      <strong>Combat Fight Club, Kollam</strong>. Kickboxing has helped me develop mental resilience,
-      physical strength, and unwavering discipline — all of which fuel my work ethic in and out of the ring.Below are the details of the club i train at. If you are interested,please check it out.
+<!-- Why Hire Me Section -->
+<section id="why-hire" class="py-5 bg-dark text-white text-center">
+  <div class="container" data-aos="fade-up" data-aos-duration="1000">
+    <h2 class="fw-bold mb-4">Why Hire Me?</h2>
+    <p class="lead mb-4">
+      I may be a fresher, but I bring unmatched passion, a strong technical foundation, and a hunger to learn, grow, and build something meaningful. Here's what I offer:
     </p>
-
-    <div class="mt-4">
-      <a href="https://instagram.com/combatfightclub_" target="_blank" class="btn btn-outline-light me-2">
-        <i class="bi bi-instagram"></i> Combat Fight Club on Instagram
-      </a>
-      <a href="https://maps.app.goo.gl/SPNyFLDXq6p4b6Tt5?g_st=com.google.maps.preview.copy" target="_blank" class="btn btn-outline-success">
-        <i class="bi bi-geo-alt-fill"></i> View Club Location
-      </a>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="p-4 bg-black rounded shadow-sm h-100">
+          <i class="bi bi-lightbulb display-4 text-warning"></i>
+          <h5 class="mt-3">Creative Problem Solver</h5>
+          <p>Approach every challenge with curiosity and fresh thinking.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="p-4 bg-black rounded shadow-sm h-100">
+          <i class="bi bi-lightning-charge display-4 text-warning"></i>
+          <h5 class="mt-3">Quick Learner</h5>
+          <p>I adapt fast and thrive in dynamic environments, eager to absorb new tools and technologies.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="p-4 bg-black rounded shadow-sm h-100">
+          <i class="bi bi-rocket-takeoff display-4 text-warning"></i>
+          <h5 class="mt-3">Growth Mindset</h5>
+          <p>Every opportunity is a chance to improve. I believe in lifelong learning and pushing my limits.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 
-
-  <!-- Resume Download Section -->
-<section id="resume" class="py-5 text-center">
+<!-- Martial Arts Section -->
+<section id="more" class="py-5 bg-dark text-white">
   <div class="container">
-    <h2 class="section-title">Download My Resume</h2>
-    <p>You can download my updated resume in PDF format.</p>
-    <a href="./files/AswinCvpdf.pdf" class="btn btn-outline-primary btn-lg" download>
-      <i class="bi bi-download"></i> Download Resume
-    </a>
-  </div>
-</section>
-
-<!-- Contact Section: WhatsApp + Instagram -->
-<section id="contact" class="py-5 text-center bg-light">
-  <div class="container">
-    <h2 class="section-title">Let’s Connect</h2>
-    <p>If you have any questions, projects, or want to collaborate — feel free to reach out on WhatsApp or Instagram.</p>
-
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/917592857182" target="_blank" class="btn btn-success btn-lg me-2 mb-2">
-      <i class="bi bi-whatsapp"></i> Message Me on WhatsApp
-    </a>
-
-    <!-- Instagram Button -->
-    <a href="https://www.instagram.com/aswin10___?igsh=MXRkaGR6eDdoamhrbA%3D%3D&utm_source=qr" target="_blank" class="btn btn-outline-primary btn-lg mb-2">
-      <i class="bi bi-instagram"></i> Follow Me on Instagram
-    </a>
-  </div>
-</section>
-
-
-
-  <!-- Footer -->
-  <footer class="text-center">
-    <div class="container">
-      <p>&copy; 2025 Aswin R. All rights reserved.</p>
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+        <h2 class="fw-bold mb-3">Martial Arts & Kickboxing</h2>
+        <p class="lead">I’m also a dedicated martial artist and a practitioner of <strong>Kickboxing</strong> at <strong>Combat Fight Club, Kollam</strong>.</p>
+        <p>You can find more about my journey on Instagram or visit the club to learn martial arts.</p>
+        <a href="https://www.instagram.com/combatfightclub_?igsh=MXYzcnZvZG4zYzM2aA==" target="_blank" class="btn btn-yellow me-3">
+          <i class="bi bi-instagram"></i> Instagram
+        </a>
+        <a href="https://maps.app.goo.gl/SPNyFLDXq6p4b6Tt5?g_st=com.google.maps.preview.copy" target="_blank" class="btn btn-outline-light">
+          <i class="bi bi-geo-alt"></i> Club Location
+        </a>
+      </div>
+      <div class="col-lg-6 text-center" data-aos="flip-left">
+        <img src="./images/kick.jpg"
+             alt="Kickboxing" class="img-fluid rounded-4 shadow" style="max-height: 400px; object-fit: cover;">
+      </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Motto Section -->
+<section class="py-5 text-center text-white bg-gradient" style="background: linear-gradient(90deg, #000, #333);">
+  <div class="container">
+    <blockquote class="blockquote fs-4" data-aos="fade-in" data-aos-duration="1200">
+      <p>"I may be starting out, but my ambition is limitless."</p>
+      <footer class="blockquote-footer text-warning"><cite title="Your Motto"></cite></footer>
+    </blockquote>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-black text-white">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4" data-aos="fade-up">Get in Touch</h2>
+    <div class="row justify-content-center text-center mb-5">
+      <!-- WhatsApp -->
+      <div class="col-6 col-md-3 mb-4">
+        <a href="https://wa.me/917592857182" target="_blank" class="text-decoration-none">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="50">
+          <p class="mt-2 text-success fw-semibold" style="font-family: 'Courier New', monospace;">WhatsApp</p>
+        </a>
+      </div>
+      <!-- Email -->
+      <div class="col-6 col-md-3 mb-4">
+        <a href="mailto:aswinpes115@email.com" class="text-decoration-none">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" width="50">
+          <p class="mt-2 text-info fw-semibold" style="font-family: 'Courier New', monospace;">Email</p>
+        </a>
+      </div>
+      <!-- Instagram -->
+      <div class="col-6 col-md-3 mb-4">
+        <a href="https://www.instagram.com/aswin10___?igsh=MXRkaGR6eDdoamhrbA%3D%3D&utm_source=qr" target="_blank" class="text-decoration-none">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="50">
+          <p class="mt-2 text-danger fw-semibold" style="font-family: 'Courier New', monospace;">Instagram</p>
+        </a>
+      </div>
+      <!-- LinkedIn -->
+      <div class="col-6 col-md-3 mb-4">
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-decoration-none">
+          <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" width="50">
+          <p class="mt-2 text-primary fw-semibold" style="font-family: 'Courier New', monospace;">LinkedIn</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap + AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
