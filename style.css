@@ -1,5 +1,0 @@
-.card-img-top {
-  height: 450px;           /* Set equal height for all card images */
-  object-fit: cover;       /* Crop the image to fill the box */
-  width: 100%;             /* Make sure image spans full width */
-}
